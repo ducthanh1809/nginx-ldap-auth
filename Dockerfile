@@ -14,4 +14,4 @@ RUN \
 
 EXPOSE 8888
 
-CMD ["python", "/usr/src/app/nginx-ldap-auth-daemon.py", "--host", "0.0.0.0", "--port", "8888"]
+CMD ["python", "/usr/src/app/nginx-ldap-auth-daemon.py", "--host", "0.0.0.0","--url","ldap://openldap:389", "--port", "8888"]

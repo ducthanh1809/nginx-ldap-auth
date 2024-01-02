@@ -1,0 +1,9 @@
+FROM python:2-alpine
+
+WORKDIR /usr/src/app/
+
+COPY backend-sample-app.py /usr/src/app/
+
+EXPOSE 9000
+
+CMD ["python", "backend-sample-app.py"]
